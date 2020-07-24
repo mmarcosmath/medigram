@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'screens/welcome/welcome_screen.dart';
+import 'package:medigram/app/screens/create_account/create_account_screen.dart';
+import 'package:medigram/app/screens/get_started/get_started_screen.dart';
+import 'package:medigram/app/screens/welcome_back/welcome_back_screen.dart';
 
 class App extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class App extends StatelessWidget {
         backgroundColor: Color(0xFFf6f6f6),
       ),
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home: GetStartedScreen(),
     );
   }
 }
