@@ -22,7 +22,9 @@ class CustomTableItem extends StatelessWidget {
         splashColor: Theme.of(context).splashColor.withOpacity(0.1),
         onTap: () {},
         child: Container(
-          height: MediaQuery.of(context).size.width * 0.3,
+          height: MediaQuery.of(context).size.height > 800
+              ? MediaQuery.of(context).size.width * 0.3
+              : MediaQuery.of(context).size.width * 0.27,
           padding: const EdgeInsets.all(8),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -31,11 +33,13 @@ class CustomTableItem extends StatelessWidget {
                 imageUrl,
                 width: MediaQuery.of(context).size.width * 0.15,
               ),
-              Text(
-                label,
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  color: Theme.of(context).hintColor,
+              FittedBox(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    color: Theme.of(context).hintColor,
+                  ),
                 ),
               ),
             ],
