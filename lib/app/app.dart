@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medigram/app/screens/doctor_list/doctor_list_screen.dart';
 import 'package:medigram/app/screens/select_category/select_category_screen.dart';
 
 class App extends StatelessWidget {
@@ -21,7 +22,7 @@ class App extends StatelessWidget {
         backgroundColor: Color(0xFFf6f6f6),
       ),
       debugShowCheckedModeBanner: false,
-      home: SelectCategory(),
+      home: DoctorListScreen(),
     );
   }
 }
