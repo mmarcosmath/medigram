@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:medigram/app/screens/components/table_item.dart';
+import 'components/app_bar.dart';
 
 class SelectCategory extends StatefulWidget {
   @override
@@ -11,41 +11,7 @@ class _SelectCategoryState extends State<SelectCategory> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Select Category",
-          style: GoogleFonts.rubik(
-            textStyle: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 20,
-              color: Theme.of(context).backgroundColor,
-            ),
-          ),
-        ),
-        actions: [
-          IconButton(
-            splashColor: Theme.of(context).splashColor.withOpacity(0.1),
-            icon: Icon(
-              Icons.notifications,
-              color: Theme.of(context).backgroundColor,
-            ),
-            onPressed: () {
-              print("object");
-            },
-          ),
-          IconButton(
-            splashColor: Theme.of(context).splashColor.withOpacity(0.1),
-            icon: Icon(
-              Icons.search,
-              color: Theme.of(context).backgroundColor,
-            ),
-            onPressed: () {
-              print("object");
-            },
-          ),
-        ],
-      ),
+      appBar: AppBarCategory().appBar(context),
       body: Center(
         child: Container(
           width: MediaQuery.of(context).size.width * 0.85,

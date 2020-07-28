@@ -50,44 +50,6 @@ class CreateAccountScreen extends StatelessWidget {
           ),
         ),
       ),
-
-      //  Container(
-      //   height: double.infinity,
-      //   decoration: BoxDecoration(
-      //     gradient: CustomGradient().getGradient(context),
-      //   ),
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       mainAxisSize: MainAxisSize.max,
-      //       mainAxisAlignment: MainAxisAlignment.center,
-      //       crossAxisAlignment: CrossAxisAlignment.center,
-      //       children: [
-      //         CustomTitle(
-      //           label: "Create an Account",
-      //         ),
-      //         Column(
-      //           mainAxisAlignment: MainAxisAlignment.center,
-      //           crossAxisAlignment: CrossAxisAlignment.center,
-      //           children: [
-      //             CustomTextField(
-      //               label: "Full Name",
-      //             ),
-      //             CustomTextField(
-      //               label: "Email",
-      //             ),
-      //             CustomTextField(
-      //               label: "Password",
-      //             ),
-      //             CustomTextField(
-      //               label: "Confirm Password",
-      //             ),
-      //           ],
-      //         ),
-      //         SingUpOption(),
-      //       ],
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
